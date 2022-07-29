@@ -38,12 +38,31 @@ class Solution:
 
         # TODO: Write code below to return a string with the solution to the prompt
 
-        for char in range(len(id)):
-            if char == 0:
-                id.split("0", " ")
-                id.strip(char)
+        first_name= ""
+        last_name = ""
+        number = ""
+        mode = 1
 
-        return id
+        for i in range(len (id)) :
+            if id[i] != "0":
+
+                if mode == 1:
+                    first_name += id[i]
+                elif mode == 2:
+                    if  id[i].isnumeric():
+                        mode = 3
+                        number += id[i]
+                    else:
+                        last_name += id[i]
+                else:
+                    number += id[i]
+            else:
+                if id[i-1] != "0":
+                    mode +=1
+                else:
+                    pass
+        final_string= "First name = {0}, Last_name = (1}, id = (2}".format(first_name, last_name, number) I
+        return final_string
 
         pass
 
