@@ -40,7 +40,7 @@ class Solution:
 
         for char in range(len(id)):
             if char == 0:
-                id.split(0, " ")
+                id.split("0", " ")
                 id.strip(char)
 
         return id
