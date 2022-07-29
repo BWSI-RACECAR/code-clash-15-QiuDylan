@@ -61,7 +61,7 @@ class Solution:
                     mode +=1
                 else:
                     pass
-        final_string= "First name = {0}, Last_name = (1}, id = (2}".format(first_name, last_name, number)
+        final_string= "First name = {0}, Last_name = {1}, id = {2}".format(first_name, last_name, number)
         return final_string
 
         pass
