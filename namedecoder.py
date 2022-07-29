@@ -40,8 +40,7 @@ class Solution:
 
         for char in (id):
             if char == 0:
-
-                char.replace('0',' ')
+                char.split()
 
 
         return id
