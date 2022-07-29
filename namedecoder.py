@@ -38,7 +38,7 @@ class Solution:
 
         # TODO: Write code below to return a string with the solution to the prompt
 
-        for char in (id):
+        for char in range(len(id)):
             if char == 0:
                 id.split(0, " ")
                 id.strip(char)
