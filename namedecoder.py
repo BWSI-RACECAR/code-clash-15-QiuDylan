@@ -38,7 +38,7 @@ class Solution:
 
         # TODO: Write code below to return a string with the solution to the prompt
 
-        for char in range(len(id)):
+        for char in (id):
             if char == 0:
 
                 char.replace('0',' ')
